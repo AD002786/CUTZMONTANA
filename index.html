@@ -474,6 +474,7 @@ header.scrolled .logo .lk-sign{font-size:34px}
 
 
 
+
 /* full-site pages */
 .page-head{padding-block:56px 0;background:radial-gradient(60% 120% at 85% 0%,var(--gold-wash),transparent 70%)}
 .page-head .rail{display:grid;gap:10px}
@@ -1070,6 +1071,13 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
 .list-strip .list-done{color:var(--ink)}
 .list-strip .err{color:#7a1d0e}
 .tone-gold .day-card{color:var(--chalk)}.tone-gold .day-card h3{color:var(--chalk)}.tone-gold .day-card .btn-ghost{border-color:var(--line);color:var(--chalk)}.tone-gold .day-card .btn-red{background:var(--metal);color:var(--on-gold,#1a1306)}
+/* specials page on cream */
+.tone-cream .day-card{background:var(--velvet);color:var(--chalk);border:0;border-top:3px solid var(--gold);box-shadow:0 24px 50px rgba(26,19,6,.22)}
+.tone-cream .day-card h3{color:var(--chalk)}
+.tone-cream .day-card p{color:#b5ab9c}
+.tone-cream .day-card .btn-ghost{border-color:var(--line);color:var(--chalk)}
+.tone-cream .day-card .btn-ghost:hover{border-color:var(--gold);background:transparent;color:var(--gold-hi)}
+.tone-cream .day-card.is-today{border-top-color:var(--gold-hi);box-shadow:0 0 0 2px var(--gold),0 30px 60px rgba(26,19,6,.3);transform:translateY(-8px)}
 </style>
 
 <div class="ticker" aria-label="Weekly specials">
@@ -1382,7 +1390,7 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
 <!-- SPECIALS -->
 <div class="view" data-view="specials" hidden>
   <section class="page-head"><div class="rail"><div class="eyebrow">VIP members · every week</div><h1>Specials</h1><p class="lede">Four promo days for VIP members. Subscribe for $9.99/month to unlock them, then book your special on theCut and mention it at checkout.</p><div class="cta-row" style="margin-top:8px"><a class="btn btn-red" href="#vip">Subscribe now · $9.99/mo</a></div></div></section>
-  <section class="band tone-gold" style="padding-top:32px">
+  <section class="band tone-cream" style="padding-top:40px">
     <div class="rail">
       <div class="days" id="days"></div>
       <p class="fine">Promo days are for active VIP Rewards members. Specials apply on their day only and can't be combined with other discounts or point rewards. KSU Wednesday requires a valid student ID at checkout.</p>
@@ -1677,6 +1685,7 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
   </section>
 </div>
 </main>
+
 
 
 
