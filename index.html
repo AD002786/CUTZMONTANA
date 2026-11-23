@@ -475,6 +475,7 @@ header.scrolled .logo .lk-sign{font-size:34px}
 
 
 
+
 /* full-site pages */
 .page-head{padding-block:56px 0;background:radial-gradient(60% 120% at 85% 0%,var(--gold-wash),transparent 70%)}
 .page-head .rail{display:grid;gap:10px}
@@ -1078,6 +1079,16 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
 .tone-cream .day-card .btn-ghost{border-color:var(--line);color:var(--chalk)}
 .tone-cream .day-card .btn-ghost:hover{border-color:var(--gold);background:transparent;color:var(--gold-hi)}
 .tone-cream .day-card.is-today{border-top-color:var(--gold-hi);box-shadow:0 0 0 2px var(--gold),0 30px 60px rgba(26,19,6,.3);transform:translateY(-8px)}
+/* header: subscribe to VIP */
+.vip-cta{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 14px 0 6px;border:1px solid var(--gold);background:linear-gradient(90deg,rgba(214,168,60,.16),rgba(214,168,60,.04));text-decoration:none;border-radius:2px;transition:background .2s,box-shadow .2s}
+.vip-cta:hover{background:linear-gradient(90deg,rgba(214,168,60,.3),rgba(214,168,60,.1));box-shadow:0 0 22px rgba(214,168,60,.25)}
+.vip-cta-badge{font-family:var(--f-display);font-weight:900;font-size:15px;letter-spacing:.08em;color:#1a1306;background:var(--metal);padding:6px 8px;line-height:1}
+.vip-cta-txt{display:grid;line-height:1.05}
+.vip-cta-txt b{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi)}
+.vip-cta-txt i{font-style:normal;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+header.scrolled .vip-cta{height:40px}
+@media (max-width:1040px){.rate-chip{display:none}}
+@media (max-width:620px){.vip-cta{padding:0 6px;gap:0}.vip-cta-txt{display:none}.head-cta{gap:6px}}
 </style>
 
 <div class="ticker" aria-label="Weekly specials">
@@ -1094,7 +1105,7 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
     </a>
     <div class="head-cta">
       <span class="rate-chip" title="131 verified reviews"><b>★ 5.0</b><i>131 reviews</i></span>
-      <a class="btn btn-ghost hide-sm" href="#contact">Contact</a>
+      <a class="vip-cta" href="#vip" aria-label="Subscribe to VIP for $9.99 a month"><span class="vip-cta-badge">VIP</span><span class="vip-cta-txt"><b>Subscribe</b><i>$9.99/mo</i></span></a>
       <button class="cart-btn" type="button" id="cartOpen" aria-label="Open cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 10V7a3 3 0 0 1 6 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span class="cart-count mono" id="cartCount" hidden>0</span></button>
       <a class="btn btn-red shine" href="https://app.thecut.co/barbers/Cutz-Montana-cmkkr6a/book" target="_blank" rel="noopener">Book now</a>
     </div>
@@ -1685,6 +1696,7 @@ a.pkg-banner:not(.facial-banner) .eyebrow::before{background:#1a1306}
   </section>
 </div>
 </main>
+
 
 
 
